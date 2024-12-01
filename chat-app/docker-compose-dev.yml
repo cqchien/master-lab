@@ -1,10 +1,10 @@
 services:
   app:
+    image: caochientp1/chat-app
     env_file:
       - .env
     container_name: chap-app
     restart: always
-    build: .
     ports:
       - "$PORT:$PORT"
     links:
