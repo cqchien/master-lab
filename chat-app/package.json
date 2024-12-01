@@ -5,6 +5,7 @@
   "private": true,
   "license": "MIT",
   "scripts": {
+    "build:prod": "nest build -p tsconfig.build.json",
     "start:dev": "nest start --watch",
     "start:prod": "node dist/main.js",
     "typeorm": "ts-node ./node_modules/typeorm/cli.js",
