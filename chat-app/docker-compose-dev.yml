@@ -3,7 +3,8 @@ services:
     image: caochientp1/chat-app
     env_file:
       - .env
-    container_name: chap-app
+    container_name: chat-app
+    platform: linux/amd64
     restart: always
     ports:
       - "$PORT:$PORT"
